@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFDEAD;
+}
+
+header {
+    background-image: url('dea.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
+
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header button {
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #ba7649;
+}
+
+#packages {
+    margin: 20px 0;
+    width: 80%;
+}
+
+#packages h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.package {
+    
+    background-color: #DEAA58;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+#booking {
+    margin: 20px 0;
+    width: 80%;
+}
+
+#booking h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: saddlebrown;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: skyblue;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+}

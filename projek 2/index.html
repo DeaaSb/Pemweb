@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Indonesia - Wisata Terbaik</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top elegant-navbar">
+  <a class="navbar-brand" href="#">Explore Indonesia With D</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#destinasi">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+      <li class="nav-item"><a class="nav-link" href="#kontak">Pesan</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container text-center">
+      <h1>Selamat Datang di Indonesia</h1>
+      <p>Jelajahi Keindahan Alam dan Budaya Indonesia dan Nikmati Perjalanmu Hanya Disini</p>
+      <a href="#destinasi" class="btn btn-primary btn-lg mt-3">Mulai Eksplorasi</a>
+    </div>
+  </section>
+
+  <!-- Destinasi Section -->
+  <section id="destinasi" class="container">
+    <h2 class="section-heading">Destinasi Populer</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7q2AogCo9YOa_ugsq6TVcEqpNQlRKBv548Aq16GcsUR6PYawUaDIVzKo&s=10" alt="Destinasi 1">
+          <div class="card-body">
+            <h5 class="card-title">Bali</h5>
+            <p class="card-text">Surga tropis dengan pantai, budaya unik, dan tempat wisata ikonik.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/destination-update-may-2019/RA_Pianemoisland_indtravel.jpg" class="card-img-top" alt="Destinasi 2">
+          <div class="card-body">
+            <h5 class="card-title">Raja Ampat</h5>
+            <p class="card-text">Destinasi snorkeling dan menyelam kelas dunia dengan keindahan laut yang tak tertandingi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhtHJlUV_uS6UE-wHm5iHkYbrF8VfgW1z4P4tjd77lLBJ4_xvNxFFmUsb&s=10" class="card-img-top" alt="Destinasi 3">
+          <div class="card-body">
+            <h5 class="card-title">Yogyakarta</h5>
+            <p class="card-text">Kota budaya yang kaya akan sejarah, dengan Candi Borobudur dan Prambanan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Section -->
+  <section id="galeri" class="container">
+    <h2 class="section-heading">Galeri Foto</h2>
+    <div class="row gallery">
+      <div class="col-md-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7PFV2loQmeC_oYHLa7Jj9dKjy86sjWCqnfGU4KSwbo57vhKRf3glOoaOV&s=10" alt="Gallery Image 1">
+      </div>
+      <div class="col-md-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN0OAXaS_OpWsbPMmoYnyW5jutK4eMRyDGmp7EqidLh8LfszbtZd_mdF4&s=10" alt="Gallery Image 2">
+      </div>
+      <div class="col-md-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOEJED9drSTguoz0bt1kbQpS0gQ51TBvwlnSPjHkPVA2Hk5tV8BbL1Zm0&s=10" alt="Gallery Image 3">
+      </div>
+      <div class="col-md-3">
+        <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2020/11/19/1063079261.jpg" alt="Gallery Image 4">
+      </div>
+    </div>
+  </section>
+
+<!-- Kontak Section -->
+<section id="kontak" class="contact-section">
+  <div class="container">
+    <h2 class="section-heading">Pesan Perjalanan Wisata Anda</h2>
+    <form id="contactForm">
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap Anda" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tujuan">Tujuan Wisata</label>
+        <select class="form-control" id="tujuan" required>
+          <option value="" disabled selected>Pilih Tujuan Wisata</option>
+          <option value="bali">Bali</option>
+          <option value="raja_ampat">Raja Ampat</option>
+          <option value="yogyakarta">Yogyakarta</option>
+          <option value="lainnya">Lainnya</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="tanggal">Tanggal Perjalanan</label>
+          <input type="date" class="form-control" id="tanggal" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="jumlahPeserta">Jumlah Peserta</label>
+          <input type="number" class="form-control" id="jumlahPeserta" placeholder="Masukkan Jumlah Peserta" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pesan">Catatan Tambahan</label>
+        <textarea class="form-control" id="pesan" rows="4" placeholder="Tuliskan permintaan khusus atau catatan tambahan..."></textarea>
+      </div>
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="agreement" required>
+        <label class="form-check-label" for="agreement">
+          Saya menyetujui <a href="#">syarat dan ketentuan</a> yang berlaku.
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Kirim Pemesanan</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Explore Indonesia | All Rights Reserved by Deyya</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

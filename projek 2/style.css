@@ -1,0 +1,144 @@
+/* Custom Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.hero {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAjebKPolfFXIDSFT3Pd9LvrVJ9NbQSoDoXM5OiV0O6vIbCWIWar_zZtNu&s=10.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fcfaf8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.section-heading {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.contact-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+  border-radius: 8px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #623f04;
+  color: #fdfcfb;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Elegant Navbar */
+.elegant-navbar {
+  background: rgba(0, 0, 0, 0.7); /* Transparan hitam */
+  backdrop-filter: blur(10px); /* Efek blur */
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.elegant-navbar a.navbar-brand {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.elegant-navbar a.navbar-brand:hover {
+  color: #ffd700; /* Emas */
+}
+
+.elegant-navbar .nav-link {
+  color: #f8f9fa;
+  font-size: 1rem;
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background 0.3s ease;
+  border-radius: 20px;
+}
+
+.elegant-navbar .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2); /* Efek hover */
+}
+
+.elegant-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.elegant-navbar .navbar-toggler-icon {
+  background-color: #fff; /* Warna ikon toggle */
+}
+
+.elegant-navbar.scrolled {
+  background: #343a40; /* Warna solid saat di-scroll */
+}

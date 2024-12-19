@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Form Pemesanan Tiket</title>  
+    <style>  
+        .error {  
+            color: red;  
+        }  
+        .error-border {  
+            border: 1px solid red;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h2>Pemesanan Tiket</h2>  
+    <form id="orderForm">  
+        <label for="name">Nama:</label>  
+        <input type="text" id="name" maxlength="30" required><br>  
+        <span class="error" id="nameError"></span><br>  
+
+        <label for="email">Email:</label>  
+        <input type="email" id="email" required><br>  
+        <span class="error" id="emailError"></span><br>  
+
+        <label for="time">Jam:</label>  
+        <input type="text" id="time" placeholder="HH.MM" required><br>  
+        <span class="error" id="timeError"></span><br>  
+
+        <label for="destination">Tujuan:</label>  
+        <input type="text" id="destination" required><br>  
+        <span class="error" id="destinationError"></span><br>  
+
+        <label for="ticketCount">Tiket:</label>  
+        <input type="number" id="ticketCount" min="1" max="10" required><br>  
+        <span class="error" id="ticketError"></span><br>  
+
+        <button type="submit">Kirim</button>  
+    </form>  
+
+    <div id="result" style="margin-top: 20px;"></div>  
+
+    <script>  
+        document.getElementById('orderForm').onsubmit = function(event) {  
+            event.preventDefault();  
+            let valid = true;  
+
+            
+            const errorElements = document.querySelectorAll('.error');  
+            errorElements.forEach(el => el.textContent = '');  
+            const inputs = document.querySelectorAll('input');  
+            inputs.forEach(input => input.classList.remove('error-border'));  
+
+           
+            const name = document.getElementById('name').value;  
+            if (name.trim() === '') {  
+                document.getElementById('nameError').textContent = "Nama tidak boleh kosong.";  
+                document.getElementById('name').classList.add('error-border');  
+                valid = false;  
+            }  
+
+             
+            const email = document.getElementById('email').value;  
+            if (!/\S+@\S+\.\S+/.test(email)) {  
+                document.getElementById('emailError').textContent = "Format email salah.";  
+                document.getElementById('email').classList.add('error-border');  
+                valid = false;  
+            }  
+
+             
+            const time = document.getElementById('time').value;  
+            if (!/^(0[0-9]|1[0-9]|2[0-3])\.[0-5][0-9]$/.test(time)) {  
+                document.getElementById('timeError').textContent = "Jam harus HH.MM antara 00.00 - 23.59.";  
+                document.getElementById('time').classList.add('error-border');  
+                valid = false;  
+            }  
+
+             
+            const destination = document.getElementById('destination').value;  
+            if (destination.trim() === '') {  
+                document.getElementById('destinationError').textContent = "Tujuan tidak boleh kosong.";  
+                document.getElementById('destination').classList.add('error-border');  
+                valid = false;  
+            }  
+
+              
+            const ticketCount = document.getElementById('ticketCount').value;  
+            if (ticketCount < 1 || ticketCount > 10) {  
+                document.getElementById('ticketError').textContent = "Jumlah tiket antara 1 dan 10.";  
+                document.getElementById('ticketCount').classList.add('error-border');  
+                valid = false;  
+            }  
+
+            
+            if (valid) {  
+                const resultDiv = document.getElementById('result');  
+                resultDiv.innerHTML = `  
+                    <h3>Detail Pemesanan:</h3>  
+                    <p>Nama: ${name}</p>  
+                    <p>Email: ${email}</p>  
+                    <p>Jam: ${time}</p>  
+                    <p>Tujuan: ${destination}</p>  
+                    <p>Jumlah Tiket: ${ticketCount}</p>  
+                `;  
+            }  
+        };  
+    </script>  
+</body>  
+</html>
